@@ -1,0 +1,29 @@
+{
+  "_model_description_": "Base resnet system",
+
+  "_comment_1_": "Data paths; change data_path and results_dir to your convenience",
+  "data_path": "datasets/cifar100",
+  "results_dir": "results",
+  "experiment_name":  "neuron_lifecycle_manager",
+  "num_workers":  0,
+
+  "_comment_2_": "Learner Parameters",
+  "stepsize":  0.1,
+  "weight_decay": 0.0005,
+  "momentum": 0.9,
+  
+  "_comment_3_": "Shrink and perturb parameters",
+  "noise_std": 0.0,
+
+  "_comment_4_": "Continual Backprop Parameters",
+  "use_cbp": false,
+
+
+  "_comment_5_": "Network resetting parameters",
+  "reset_head": false,
+  "reset_network": false,
+  "early_stopping": true,
+
+  "_comment_6_": "Neuron Lifecycle Manager Parameters",
+  "use_nlm": true
+}
